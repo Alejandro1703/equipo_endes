@@ -76,7 +76,7 @@ public abstract class Personal {
      * @return el sueldo base como double
      */
     public double getSueldoBase() {
-        return sueldoBase;
+        return sueldoBase; 
     }
 
     /**
@@ -86,7 +86,7 @@ public abstract class Personal {
      * @throws IllegalArgumentException si el sueldo base es negativo
      */
     public void setSueldoBase(double sueldoBase) {
-        if (sueldoBase < 0) {
+        if (sueldoBase < 0) { 
             throw new IllegalArgumentException("El sueldo base no puede ser negativo.");
         }
         this.sueldoBase = sueldoBase;

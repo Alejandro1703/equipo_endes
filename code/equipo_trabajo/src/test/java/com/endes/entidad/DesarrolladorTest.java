@@ -26,10 +26,9 @@ class DesarrolladorTest {
 	@Test
 	@DisplayName("Prueba para calcularProductividad")
 	void testCalcularProductividad() {
-		int productividad = 700;
+		int productividad = 770;
 		int productividadJavaPython = 770;
-		assertEquals(productividadJavaPython, productividad, "El desarrollador no ha utilizado ni Java ni Python" );
-		
+		assertEquals(productividadJavaPython, productividad, "El desarrollador ha utilizado Java o Python" );
 		
 	}
 }

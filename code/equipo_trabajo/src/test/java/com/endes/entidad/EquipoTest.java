@@ -19,11 +19,10 @@ class EquipoTest {
         equipo = new Equipo();
     }
 
-    @Disabled
     @Test
     @DisplayName("Añadir un miembro con DNI único no lanza excepción; el duplicado sí")
     void testAñadirMiembroDuplicado() {
-        Personal dev1 = new Desarrollador("123A", "Ana", 1000.0, "Java");
+        Personal dev1 = new Desarrollador("123A", "Ana", 1000.0, "Java"); 
         Personal devDuplicado = new Desarrollador("123A", "OtroNombre", 1100.0, "Python");
 
         // Primer miembro → no debe lanzar excepción
@@ -35,6 +34,7 @@ class EquipoTest {
             IllegalArgumentException.class,
             () -> equipo.añadirMiembro(devDuplicado),
             "Se esperaba una excepción por DNI duplicado"
+            
         );
 
     }

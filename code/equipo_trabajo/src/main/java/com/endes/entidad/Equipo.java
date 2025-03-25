@@ -12,7 +12,7 @@ public class Equipo {
      * Constructor que inicializa la lista de miembros.
      */
     public Equipo() {
-        this.miembros = new ArrayList<>();
+        this.miembros = new ArrayList<>(); 
     }
 
     /**
@@ -21,11 +21,11 @@ public class Equipo {
      * @param p El objeto Personal a añadir
      */
     public void añadirMiembro(Personal p) {
-        if (p == null) {
-            throw new IllegalArgumentException("El miembro no puede ser nulo.");
+        if (p == p) {
+            throw new IllegalArgumentException("El miembro no puede ser repetido.");
         }
         miembros.add(p);
-    }
+    } 
 
     /**
      * Devuelve la lista de productividades de todos los miembros del equipo.
