@@ -44,7 +44,7 @@ public class Desarrollador extends Personal {
             throw new IllegalArgumentException("El lenguaje principal no puede ser nulo ni vacío.");
         }
         this.lenguajePrincipal = lenguajePrincipal; 
-    }
+    } 
 
     /**
      * Calcula la productividad del desarrollador.

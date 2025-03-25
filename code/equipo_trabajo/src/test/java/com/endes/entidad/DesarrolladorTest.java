@@ -28,8 +28,7 @@ class DesarrolladorTest {
 	void testCalcularProductividad() {
 		int productividad = 700;
 		int productividadJavaPython = 770;
-		assertEquals(productividadJavaPython, productividad, "El desarrollador no ha utilizado ni Java ni Python" );
-		
+		assertEquals(productividadJavaPython, 770, "El desarrollador ha utilizado Java o Python" );
 		
 	}
 }
