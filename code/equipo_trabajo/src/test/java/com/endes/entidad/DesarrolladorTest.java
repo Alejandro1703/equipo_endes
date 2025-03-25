@@ -19,13 +19,17 @@ class DesarrolladorTest {
 		}
 	@Test
 	@DisplayName("Prueba para getDNI")
-	void testgetLenguajeJava() {
+	void testgetLenguajePrincipal() {
 		String lenguajeUsado = "Java";
 		assertEquals(lenguajeUsado, desarrollador.getLenguajePrincipal() );	
 	}
-	void testLenguajePython() {
-		String lenguajeUsado2 = "Python";
-		assertEquals(lenguajeUsado2, desarrollador.getLenguajePrincipal() );
-
+	@Test
+	@DisplayName("Prueba para calcularProductividad")
+	void testCalcularProductividad() {
+		int productividad = 700;
+		int productividadJavaPython = 770;
+		assertEquals(productividadJavaPython, productividad, "El desarrollador no ha utilizado ni Java ni Python" );
+		
+		
 	}
 }

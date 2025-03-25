@@ -43,7 +43,7 @@ public class Desarrollador extends Personal {
         if (lenguajePrincipal == null || lenguajePrincipal.trim().isEmpty()) {
             throw new IllegalArgumentException("El lenguaje principal no puede ser nulo ni vacío.");
         }
-        this.lenguajePrincipal = lenguajePrincipal;
+        this.lenguajePrincipal = lenguajePrincipal; 
     }
 
     /**
